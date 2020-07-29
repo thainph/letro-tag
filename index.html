@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <title>Hallo!</title>
+</head>
+<body>
+    <div>
+        <h1 style="text-align: center;">Hello !</h1>
+        <!--
+            1. Ugc set edit page (URL: /advertiser/adv1/ugc-sets/9/edit)
+            2. Using script at `Display Position`
+         -->
+        <div class="letroUgcsetGadget" data-contents="letro-gadget" data-gadget-id="2"></div>
+    </div>
+    <!-- ============================================================== -->
+    <!--
+        1. Advertiser setting page (URL: /advertiser/adv1/settings)
+        2. Using script at `Embedded Tag Setting`
+    -->
+    <script>
+        window.__letroUgcGadget = window.__letroUgcGadget || {};
+        __letroUgcGadget.advertiser_id = 1;
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://letro-dev.com/tags/js/letro.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'letro-jssdk'));
+    </script>
+</body>
+</html>
