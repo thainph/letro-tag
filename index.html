@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="https://letro-dev.com/test.css">
 </head>
 <body>
-    <div id="main"></div>
+    <textarea id='customCss' onchange="applyCss();"></textarea>
     <h3>Pattern 1</h3>
     <div class="pattern-1"></div>
      <h3>Pattern 2</h3>
@@ -37,6 +37,13 @@
             js.src = "https://letro-dev.com/tags/js/letro.js";
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'letro-jssdk'));
+    </script>
+    <style type="text/css" id='applyCss'></style>
+    <script type="text/javascript">
+        function applyCss() {
+            var css = $letroUgcsetJQ('#customCss').html();
+            $letroUgcsetJQ('#applyCss').html('<style>' + css + '</style>');
+        }
     </script>
 </body>
 </html>
