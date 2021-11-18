@@ -13,6 +13,17 @@
     <title>Hallo!</title>
 </head>
 <body>
+    <div id="company-review"></div>
+<script>(function(d, s, i, p) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(i)) return;
+        js = d.createElement(s); js.id = i;
+        js.setAttribute('cid', p);
+        js.setAttribute('asset-url', 'https://app.jinrou-gosetsu.jp/')
+        js.setAttribute('render-selector', '#company-review')
+        js.src = "https://app.jinrou-gosetsu.jp/company_review.min.js')";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'jinrou-sdk', 1));</script>
     <div id="section-1"></div>
     <div id="section-2"></div>
     <div class="letroUgcsetGadget" data-contents="letro-gadget" data-gadget-id="56"></div>
