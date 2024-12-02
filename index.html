@@ -1,42 +1,29 @@
 <!DOCTYPE html>
-<html dir="ltr">
+<html lang="vi">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Tell the browser to be responsive to screen width -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="csrf-token" content="jqkyLKqtTiUQt0d6McQaOCELxa5X7izoa0ImqxDd">
-    <meta name="locale" content="ja"> 
-    <!-- Favicon icon -->
-    <title>Hallo!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hóa đơn</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .invoice {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
-    <div id="company-review"></div>
-<script>(function(d, s, i, p) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(i)) return;
-        js = d.createElement(s); js.id = i;
-        js.setAttribute('cid', p);
-        js.setAttribute('asset-url', 'https://app.jinrou-gosetsu.jp/')
-        js.setAttribute('render-selector', '#company-review')
-        js.src = "https://app.jinrou-gosetsu.jp/sdk/company_review.min.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'jinrou-sdk', 1));</script>
-    <div id="section-1"></div>
-    <div id="section-2"></div>
-    <div class="letroUgcsetGadget" data-contents="letro-gadget" data-gadget-id="56"></div>
-    <script>
-    window.__letroUgcGadget = window.__letroUgcGadget || {};
-    __letroUgcGadget.advertiser_id = 16;
-    (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "https://stg.letro.jp/tags/js/letro.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'letro-jssdk'));
-</script>
+    <div class="invoice">
+        <h3>Hóa đơn bán hàng</h3>
+        <p>Khách hàng: Nguyễn Văn A</p>
+        <p>Sản phẩm: Laptop XYZ</p>
+        <p>Tổng tiền: 15,000,000 VNĐ</p>
+        <button onclick="window.print()">In hóa đơn</button>
+    </div>
 </body>
 </html>
